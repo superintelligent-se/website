@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="title desc">
+  <title id="title">Porträtt av Gusten Toftvik (illustration)</title>
+  <desc id="desc">Grafisk illustration med initialerna GT i vitt mot en turkos cirkel.</desc>
+  <defs>
+    <linearGradient id="gradGusten" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#006a6a" />
+      <stop offset="100%" stop-color="#25d5b6" />
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="95" fill="url(#gradGusten)" />
+  <text x="50%" y="58%" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="72" fill="#fff" font-weight="700">GT</text>
+</svg>
