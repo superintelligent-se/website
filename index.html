@@ -3,203 +3,42 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Superintelligent — Hem</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Superintelligent — Prata med oss</title>
+  <link rel="stylesheet" href="assets/css/home.css">
 </head>
-<body>
-  <header class="menu" role="banner">
-    <div class="container">
-      <a class="menu-logo" href="index.html">Superintelligent</a>
-      <nav aria-label="MenuBar">
+<body class="home-landing">
+  <main class="landing" role="main">
+    <div class="landing-shell">
+      <div class="landing-brand" aria-label="Superintelligent">superintelligent</div>
+      <section class="landing-intro" aria-labelledby="landing-title">
+        <div class="landing-copy">
+          <h1 id="landing-title">Prata med SuperIntelligent</h1>
+          <h2 class="landing-subtitle">Vi använder AI‑röstteknik för att guida dig.</h2>
+          <p class="landing-description">Tryck på mikrofon-knappen, berätta vad du behöver hjälp med och få direkt vägledning från vår röstagent.</p>
+        </div>
+        <div class="landing-widget" aria-live="polite">
+          <button class="voice-button" type="button" data-voice-launch aria-describedby="voice-instructions">
+            <span aria-hidden="true">🎙️</span>
+            Starta röstagenten
+          </button>
+          <p id="voice-instructions" class="voice-instructions">Tryck och prata med oss. Agenten ger dig alla instruktioner automatiskt.</p>
+          <div class="widget-frame" data-voice-widget>
+            <elevenlabs-convai agent-id="agent_5101k7h468jafc398n850pr953ff"></elevenlabs-convai>
+          </div>
+          <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+          <a class="text-link" href="retro.html">Jag vill inte prata — visa textversionen</a>
+        </div>
+      </section>
+      <section class="landing-guidance" aria-label="Instruktioner">
+        <h3>Så funkar det</h3>
         <ul>
-          <li><a href="index.html">Hem</a></li>
-          <li><a href="metod.html">Metod</a></li>
-          <li><a href="ramverk.html">Ramverk</a></li>
-          <li><a href="tjanster/traning.html">Tjänster</a></li>
-          <li><a href="om/filosofi.html">Om</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><strong>Välkommen:</strong> Hej! Jag är SuperIntelligent, din AI‑rådgivare.</li>
+          <li><strong>Starta samtal:</strong> Tryck på mikrofon-knappen och berätta hur vi kan hjälpa dig.</li>
+          <li><strong>Alternativ för text:</strong> Föredrar du att skriva? Välj “Jag vill inte prata” för att komma till textversionen.</li>
         </ul>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <div class="container">
-      <section class="window hero">
-        <div class="window-titlebar"><span class="dots" aria-hidden="true"><span></span><span></span><span></span></span>Start</div>
-        <div class="window-body">
-          <h1>Gör er organisation superintelligent med riktiga AI-resultat på veckor.</h1>
-          <p>Vi hjälper ledningar och team att hitta värde, bygga lösningar och implementera AI i verksamheten utan krångel. Allt sker i tydliga steg, med människor i fokus och mätbar nytta i varje leverans.</p>
-          <a class="button" href="https://example.com/consultation" target="_blank" rel="noreferrer noopener">Boka gratis möte</a>
-        </div>
-      </section>
-
-      <section class="window">
-        <div class="window-titlebar"><span class="dots" aria-hidden="true"><span></span><span></span><span></span></span>Super4</div>
-        <div class="window-body">
-          <div class="grid two">
-            <div class="step">
-              <h2>1. Lär dig AI</h2>
-              <p>Föreläsningar och träningar för att förstå var AI är idag, träna färdigheter och bli 20–30&nbsp;% mer produktiv direkt efter träningen med en egen AI-assistent.</p>
-            </div>
-            <div class="step">
-              <h2>2. Lär leda dig själv med AI</h2>
-              <p>Föreläsningar och utbildningar med samma struktur som steg ett, men med fokus på att förstå sig själv, hantera motstånd mot förändring och utveckla självledarskap med meningsfulla mål.</p>
-            </div>
-            <div class="step">
-              <h2>3. Automatisera med AI</h2>
-              <p>Föreläsningar och utbildningar som kartlägger egna arbetsflöden och visar hur AI-agenter och hybrider redan idag kan ta över många arbetsuppgifter.</p>
-            </div>
-            <div class="step">
-              <h2>4. Implementera AI</h2>
-              <p>Workshops och rådgivning av våra AI-verksamhetsarkitekter för rätt data, konfiguration och implementering av AI-verktyg som ger omedelbar affärsnytta.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="window">
-        <div class="window-titlebar"><span class="dots" aria-hidden="true"><span></span><span></span><span></span></span>Tillit</div>
-        <div class="window-body">
-          <p class="logos">Anlitade av proffs och ledare …</p>
-        </div>
-      </section>
-
-      <section class="window">
-        <div class="window-titlebar"><span class="dots" aria-hidden="true"><span></span><span></span><span></span></span>Röster</div>
-        <div class="window-body">
-          <div class="grid testimonial-grid">
-            <div class="testimonial">
-              <img class="testimonial-avatar" src="assets/img/testimonials/niclas-almen.svg" alt="Niclas Almén">
-              <div class="testimonial-content">
-                <div class="testimonial-rating" aria-label="5 av 5 stjärnor">★★★★★</div>
-                <p class="testimonial-quote">”Den här sessionen katapulterade mig 6–12 månader in i AIs framtid, jag använder AI-verktyg för att skapa upp mer och bättre nu samtidigt för att jag och min bolagspartner när jag skapar strategier och analyser av marknader.”</p>
-                <p class="testimonial-meta">Niclas Almén · VD &amp; medgrundare, Expansion &amp; Drift AB</p>
-              </div>
-            </div>
-            <div class="testimonial">
-              <img class="testimonial-avatar" src="assets/img/testimonials/gusten-toftvik.svg" alt="Gusten Toftvik">
-              <div class="testimonial-content">
-                <div class="testimonial-rating" aria-label="5 av 5 stjärnor">★★★★★</div>
-                <p class="testimonial-quote">”Superintelligent har hjälpt mig att spara betydande tid genom att integrera AI i min arbetsflöde. Jag känner att jag har fått bättre koll på övergripande frågor för affärslivets skull, samtidigt skapar klarhet och en operativ trygghet.”</p>
-                <p class="testimonial-meta">Gusten Toftvik · VD, VOYD</p>
-              </div>
-            </div>
-            <div class="testimonial">
-              <img class="testimonial-avatar" src="assets/img/testimonials/helen-rosenberg.svg" alt="Helen Rosenberg">
-              <div class="testimonial-content">
-                <div class="testimonial-rating" aria-label="5 av 5 stjärnor">★★★★★</div>
-                <p class="testimonial-quote">”Den här sessionen revolutionerade mitt arbetssätt och sparade mig minst en halv dag av arbete i veckan. Efter första sessionen har vi kontinuerligt fortsatt och lär oss mer om hur vi enklare och bättre kan identifiera och konfigurera lösningar. Det känns som att vi arbetar smartare och mer effektivt.”</p>
-                <p class="testimonial-meta">Helen Rosenberg · COO, Setly</p>
-              </div>
-            </div>
-            <div class="testimonial">
-              <img class="testimonial-avatar" src="assets/img/testimonials/emil-lightz.svg" alt="Emil">
-              <div class="testimonial-content">
-                <div class="testimonial-rating" aria-label="5 av 5 stjärnor">★★★★★</div>
-                <p class="testimonial-quote">”Vi har grymma utbildare som håller intresset högt under hela sessionen. Vi har fått en helt ny medvetenhet kring vilka möjligheter vi har i AI-världen.”</p>
-                <p class="testimonial-meta">Emil · Sales Lead, Lightz</p>
-              </div>
-            </div>
-            <div class="testimonial">
-              <img class="testimonial-avatar" src="assets/img/testimonials/emmelie-hochscheid.svg" alt="Emmelie Hochscheid">
-              <div class="testimonial-content">
-                <div class="testimonial-rating" aria-label="5 av 5 stjärnor">★★★★★</div>
-                <p class="testimonial-quote">”Vi har fått avancerade tips som vi inte tidigare hört. Det har gett oss insikter om hur vi kan börja använda AI i vårt dagliga arbete. Vi har nu också ett språk för att prata om AI internt. Vi är peppade på att fortsätta jobba med Superintelligent! (PS. Vi lärde oss även hur vi kan få Hubspot att göra GANTT). Och de följde även upp med vad vi behövde hjälp med efteråt. Den bästa inspirationen vi kan önska!”</p>
-                <p class="testimonial-meta">Emmelie Hochscheid · CMO, 1337</p>
-              </div>
-            </div>
-            <div class="testimonial">
-              <img class="testimonial-avatar" src="assets/img/testimonials/kommande-kund.svg" alt="Kommande kund">
-              <div class="testimonial-content">
-                <div class="testimonial-rating" aria-label="5 av 5 stjärnor">★★★★★</div>
-                <p class="testimonial-quote">”Här kommer snart fler nöjda kunder.”</p>
-                <p class="testimonial-meta">Ditt namn? · Hör av dig så fyller vi på!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="window" data-accordion>
-        <div class="window-titlebar"><span class="dots" aria-hidden="true"><span></span><span></span><span></span></span>FAQ</div>
-        <div class="window-body">
-          <div class="accordion">
-            <div class="accordion-item">
-              <button class="accordion-trigger" aria-expanded="false">Vad är Superintelligent?<span aria-hidden="true">▾</span></button>
-              <div class="accordion-panel" hidden>
-                <p>Superintelligent är ett svenskt AI-team som kombinerar strategi, teknik och förändringsledning för att skapa hållbar nytta av artificiell intelligens.</p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button class="accordion-trigger" aria-expanded="false">Hur kan ni hjälpa oss?<span aria-hidden="true">▾</span></button>
-              <div class="accordion-panel" hidden>
-                <p>Vi guidar er genom Super4-metoden: lär dig AI, lär leda dig själv med AI, automatisera med AI och implementera AI. Varje steg ger praktiska resultat med utbildning, automation och införande.</p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button class="accordion-trigger" aria-expanded="false">Kan vi börja utan erfarenhet?<span aria-hidden="true">▾</span></button>
-              <div class="accordion-panel" hidden>
-                <p>Ja. Vi startar med pedagogiska workshops och personlig handledning så att hela teamet känner sig tryggt med AI-verktygen.</p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button class="accordion-trigger" aria-expanded="false">Hur skiljer ni er från konsultbolag?<span aria-hidden="true">▾</span></button>
-              <div class="accordion-panel" hidden>
-                <p>Vi arbetar i korta iterationer, delar vår metod öppet och bygger för självständighet. Vår modell är designad för att ge effekt direkt i verksamheten.</p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button class="accordion-trigger" aria-expanded="false">Vad är Super8 Roadmap?<span aria-hidden="true">▾</span></button>
-              <div class="accordion-panel" hidden>
-                <p>Super8 är vår analys av AI-mognad. Den kartlägger åtta områden från ledningskompetens till datadrivet beslutsfattande och landar i en prioriterad plan.</p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button class="accordion-trigger" aria-expanded="false">Kan vi testa först?<span aria-hidden="true">▾</span></button>
-              <div class="accordion-panel" hidden>
-                <p>Absolut. Vi startar gärna med en pilot eller PoC så ni kan utvärdera både nytta och arbetssätt innan större investeringar.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="window">
-        <div class="window-titlebar"><span class="dots" aria-hidden="true"><span></span><span></span><span></span></span>Podd &amp; Pulse</div>
-        <div class="window-body">
-          <div class="grid two">
-            <div>
-              <h2>Lyssna på podden</h2>
-              <p>Vi intervjuar ledare och experter som använder AI i praktiken. Snabba avsnitt, konkreta lärdomar.</p>
-              <a class="button" href="https://example.com/podcast" target="_blank" rel="noreferrer noopener">Öppna podden</a>
-            </div>
-            <div>
-              <h2>Gå med i Pulse</h2>
-              <p>Ett community för beslutsfattare som vill följa trender, utbyta erfarenheter och testa nya verktyg.</p>
-              <a class="button" href="https://example.com/pulse" target="_blank" rel="noreferrer noopener">Gå med</a>
-            </div>
-          </div>
-        </div>
       </section>
     </div>
   </main>
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-cards">
-        <div class="footer-card">
-          <h3>Thomas</h3>
-          <p>Tel: <a href="tel:+46734034343">+46 73 403 43 43</a></p>
-          <p><a href="#">WhatsApp</a> · <a href="#">LinkedIn</a></p>
-        </div>
-        <div class="footer-card">
-          <h3>Martin</h3>
-          <p>Tel: <a href="tel:+46703640322">+46 70 364 03 22</a></p>
-          <p><a href="#">WhatsApp</a> · <a href="#">LinkedIn</a></p>
-        </div>
-      </div>
-      <p class="footer-legal">© Superintelligent 1984–∞. Alla pixlar räknas. Inga robotar skadades under skapandet av denna webbplats.</p>
-    </div>
-  </footer>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
