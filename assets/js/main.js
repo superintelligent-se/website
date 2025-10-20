@@ -44,4 +44,16 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  const voiceLauncher = document.querySelector('[data-voice-launch]');
+  const voiceWidget = document.querySelector('[data-voice-widget]');
+  if (voiceLauncher && voiceWidget) {
+    voiceLauncher.addEventListener('click', () => {
+      voiceWidget.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      const focusable = voiceWidget.querySelector('button, [role="button"], iframe, audio, video');
+      if (focusable && typeof focusable.focus === 'function') {
+        setTimeout(() => focusable.focus({ preventScroll: true }), 300);
+      }
+    });
+  }
 });
